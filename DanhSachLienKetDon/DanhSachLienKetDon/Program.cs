@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using static System.Console;
 
 namespace DanhSachLienKetDon
 {
@@ -28,7 +29,8 @@ namespace DanhSachLienKetDon
       
         static void Menu()
         {
-            Console.WriteLine("\n\n\t\t======MENU========");
+           
+            WriteLine("\n\n\t\t======MENU========");
             Console.WriteLine("0.ket thuc chuong trinh");
             Console.WriteLine("1.tao thong tin sinh vien tu file");
             Console.WriteLine("2.xem thong tin sinh vien");

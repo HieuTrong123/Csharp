@@ -1,0 +1,8 @@
+C:\Csharp\Csharp\QuanLyHinhHoc\QuanLyHinhHoc\bin\Debug\QuanLyHinhHoc.exe.config
+C:\Csharp\Csharp\QuanLyHinhHoc\QuanLyHinhHoc\bin\Debug\QuanLyHinhHoc.exe
+C:\Csharp\Csharp\QuanLyHinhHoc\QuanLyHinhHoc\bin\Debug\QuanLyHinhHoc.pdb
+C:\Csharp\Csharp\QuanLyHinhHoc\QuanLyHinhHoc\obj\Debug\QuanLyHinhHoc.csproj.AssemblyReference.cache
+C:\Csharp\Csharp\QuanLyHinhHoc\QuanLyHinhHoc\obj\Debug\QuanLyHinhHoc.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\Csharp\QuanLyHinhHoc\QuanLyHinhHoc\obj\Debug\QuanLyHinhHoc.csproj.CoreCompileInputs.cache
+C:\Csharp\Csharp\QuanLyHinhHoc\QuanLyHinhHoc\obj\Debug\QuanLyHinhHoc.exe
+C:\Csharp\Csharp\QuanLyHinhHoc\QuanLyHinhHoc\obj\Debug\QuanLyHinhHoc.pdb

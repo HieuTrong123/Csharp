@@ -1,0 +1,8 @@
+C:\Csharp\Csharp\DSLKDCSharp\DSLKDCSharp\bin\Debug\DSLKDCSharp.exe.config
+C:\Csharp\Csharp\DSLKDCSharp\DSLKDCSharp\bin\Debug\DSLKDCSharp.exe
+C:\Csharp\Csharp\DSLKDCSharp\DSLKDCSharp\bin\Debug\DSLKDCSharp.pdb
+C:\Csharp\Csharp\DSLKDCSharp\DSLKDCSharp\obj\Debug\DSLKDCSharp.csproj.AssemblyReference.cache
+C:\Csharp\Csharp\DSLKDCSharp\DSLKDCSharp\obj\Debug\DSLKDCSharp.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\Csharp\DSLKDCSharp\DSLKDCSharp\obj\Debug\DSLKDCSharp.csproj.CoreCompileInputs.cache
+C:\Csharp\Csharp\DSLKDCSharp\DSLKDCSharp\obj\Debug\DSLKDCSharp.exe
+C:\Csharp\Csharp\DSLKDCSharp\DSLKDCSharp\obj\Debug\DSLKDCSharp.pdb
