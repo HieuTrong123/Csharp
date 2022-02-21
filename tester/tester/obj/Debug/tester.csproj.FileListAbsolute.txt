@@ -1,0 +1,3 @@
+C:\Csharp\Csharp\tester\tester\obj\Debug\tester.csproj.AssemblyReference.cache
+C:\Csharp\Csharp\tester\tester\obj\Debug\tester.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\Csharp\tester\tester\obj\Debug\tester.csproj.CoreCompileInputs.cache

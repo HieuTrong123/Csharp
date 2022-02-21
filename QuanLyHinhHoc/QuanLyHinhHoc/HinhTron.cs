@@ -18,4 +18,18 @@ namespace QuanLyHinhHoc
         public double duongKinh { get { return banKinh * 2; } }
 
     }
+    public class PhanSo
+    {
+        public int tuSo;
+        public int mauSo;
+        public PhanSo(int tuSo,int mauSo)
+        {
+           this.tuSo= tuSo;
+            this.mauSo= mauSo;
+        }
+        public void Xuat()
+        {
+            Console.WriteLine("{0}/{1}", tuSo, mauSo);
+        }
+    }
 }

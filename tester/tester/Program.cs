@@ -4,19 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLyHinhHoc
+namespace tester
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            PhanSo a = new PhanSo(1, 2);
+            phanso a=new phanso();
             a.Xuat();
-            PhanSo b = a;
-            b.tuSo = 100;
+            phanso b = a;
+            b.tu = 100;
             b.Xuat();
             a.Xuat();
-
             Console.ReadKey();
         }
     }
