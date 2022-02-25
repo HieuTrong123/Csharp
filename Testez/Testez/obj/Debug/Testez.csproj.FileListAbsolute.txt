@@ -1,0 +1,8 @@
+C:\Csharp\Csharp\Testez\Testez\bin\Debug\Testez.exe.config
+C:\Csharp\Csharp\Testez\Testez\bin\Debug\Testez.exe
+C:\Csharp\Csharp\Testez\Testez\bin\Debug\Testez.pdb
+C:\Csharp\Csharp\Testez\Testez\obj\Debug\Testez.csproj.AssemblyReference.cache
+C:\Csharp\Csharp\Testez\Testez\obj\Debug\Testez.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\Csharp\Testez\Testez\obj\Debug\Testez.csproj.CoreCompileInputs.cache
+C:\Csharp\Csharp\Testez\Testez\obj\Debug\Testez.exe
+C:\Csharp\Csharp\Testez\Testez\obj\Debug\Testez.pdb
