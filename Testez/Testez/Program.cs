@@ -10,11 +10,11 @@ namespace Testez
 {
     interface IHInhHoc
     {
-         double ChuVi();
-         double DienTich();
-        
-           
-        
+        double ChuVi();
+        double DienTich();
+
+
+
     }
     class HCN : IHInhHoc
     {
@@ -28,8 +28,13 @@ namespace Testez
             throw new NotImplementedException();
         }
     }
+   
+        
+
     public abstract class HinhHoc
     {
+        
+        
         public int chieuDai;
         public int chieuRong;
        public HinhHoc()
@@ -43,13 +48,16 @@ namespace Testez
     {
         public HinhVuong(int chieuDai,int chieuRong):base()
         {
+            
             this.chieuDai = chieuDai;
             this.chieuRong = chieuRong;
             WriteLine($"chieu dai cua chuoi la {this.chieuDai} \nchieu rong cua chuoi la {this.chieuRong}");
         }
     }
+   
     class Program
     {
+
        static void Swap<T>(ref T a,ref T b)
         {
             T temp = a;
@@ -60,12 +68,18 @@ namespace Testez
         static void Main(string[] args)
         {
             
-            HinhVuong h = new HinhVuong(5, 5);
-            int a = 5, b = 6;
-            WriteLine($"a = {a},b={b}");
-            Swap(ref a,ref b);
-            WriteLine($"a = {a},b={b}");
             
+            
+            //Console.ForegroundColor = ConsoleColor.Blue;
+            
+            
+            //HinhVuong h = new HinhVuong(5, 5);
+            //int a = 5, b = 6;
+            //WriteLine($"a = {a},b={b}");
+            //Swap(ref a,ref b);
+            //WriteLine($"a = {a},b={b}");
+           
+
             ReadKey();
         }
     }

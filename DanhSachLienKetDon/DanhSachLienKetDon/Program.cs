@@ -44,26 +44,36 @@ namespace DanhSachLienKetDon
         }
         static void NhapDanhSachSinhVien(SinhVien[] ds, ref int n)
         {
-            String line = "";
-            using (StreamReader sr = new StreamReader("Sinhvien.txt"))
+            try
             {
-                
-                
-                while ((line = sr.ReadLine()) != null)
+                String line = "";
+                using (StreamReader sr = new StreamReader("Sinhvien.txt"))
                 {
-                   
-                    var sinhvien = line.Split(',');
-                    ds[n].maSV = sinhvien[0];
-                    ds[n].hoTen = sinhvien[1];
-                    ds[n].namSinh = int.Parse(sinhvien[2]);
-                    ds[n].lop = sinhvien[3];
-                    ds[n].diem = double.Parse(sinhvien[4]);
-                    ds[n].xepLoai = "";
-                    n++;
-                }
 
-                Console.WriteLine("thanh cong");
+
+                    while ((line = sr.ReadLine()) != null)
+                    {
+
+                        var sinhvien = line.Split(',');
+                        ds[n].maSV = sinhvien[0];
+                        ds[n].hoTen = sinhvien[1];
+                        ds[n].namSinh = int.Parse(sinhvien[2]);
+                        ds[n].lop = sinhvien[3];
+                        ds[n].diem = double.Parse(sinhvien[4]);
+                        ds[n].xepLoai = "";
+                        n++;
+                    }
+
+                    Console.WriteLine("Thanh cong!!!");
+                }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("that bai!!");
+            }
+
+            
         }
         static void XuatMotSV(SinhVien sv)
         {
