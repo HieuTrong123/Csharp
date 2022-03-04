@@ -1,0 +1,8 @@
+C:\Csharp\Csharp\TongHopQuanLy\TongHopQuanLy\bin\Debug\TongHopQuanLy.exe.config
+C:\Csharp\Csharp\TongHopQuanLy\TongHopQuanLy\bin\Debug\TongHopQuanLy.exe
+C:\Csharp\Csharp\TongHopQuanLy\TongHopQuanLy\bin\Debug\TongHopQuanLy.pdb
+C:\Csharp\Csharp\TongHopQuanLy\TongHopQuanLy\obj\Debug\TongHopQuanLy.csproj.AssemblyReference.cache
+C:\Csharp\Csharp\TongHopQuanLy\TongHopQuanLy\obj\Debug\TongHopQuanLy.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\Csharp\TongHopQuanLy\TongHopQuanLy\obj\Debug\TongHopQuanLy.csproj.CoreCompileInputs.cache
+C:\Csharp\Csharp\TongHopQuanLy\TongHopQuanLy\obj\Debug\TongHopQuanLy.exe
+C:\Csharp\Csharp\TongHopQuanLy\TongHopQuanLy\obj\Debug\TongHopQuanLy.pdb
