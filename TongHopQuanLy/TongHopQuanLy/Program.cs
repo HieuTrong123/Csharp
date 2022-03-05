@@ -58,6 +58,7 @@ namespace TongHopQuanLy
                 Console.WriteLine("6.doi mau thong tin cua cac sinh vien co hoc luc kem thanh mau red");
                 Console.WriteLine("7.xoa sinh vien co ma so xho truoc");
                 Console.WriteLine("8.them sinh vien vao vi tri cho truoc");
+                Console.WriteLine("9.xoa sinh vien co hoc luc yeu");
                 Console.WriteLine("\n\n\t\t=============MENU=============");
                 Console.WriteLine("nhap lua chon cua ban: ");
                 luaChon = int.Parse(Console.ReadLine());
@@ -96,7 +97,7 @@ namespace TongHopQuanLy
                         ds.Sort(
                             (a, b) =>
                         {
-                            if(string.Compare(a.lop, b.lop) > 0)  return 1;
+                            if (string.Compare(a.lop, b.lop) > 0) return 1;
                             if (string.Compare(a.lop, b.lop) == 0) return 0;
                             return -1;
                         });
@@ -106,15 +107,54 @@ namespace TongHopQuanLy
                         break;
                     case 6:
                         Console.WriteLine("6.doi mau thong tin cac sinh vien co hoc luc kem thanh mau red");
-                        
+                        Console.WriteLine("danh sach sinh vien truoc khi chuyen la: ");
+                        ql.XemDS(ds);
+                        ql._ChangeColor(ds);
+
+
                         Console.ReadKey();
                         break;
                     case 7:
                         Console.WriteLine("7.xoa sinh vien co ma so cho truoc");
+                        Console.WriteLine("danh sach ban dau la: ");
+                        ql.XemDS(ds);
+                        int vt;
+                        Console.WriteLine("nhap vi tri sinh vien ban muon xoa: ");
+                        vt = int.Parse(Console.ReadLine());
+                        ds.RemoveAt(vt);
+                        Console.WriteLine("danh sach sau khi xoa la: ");
+                        ql.XemDS(ds);
                         Console.ReadKey();
                         break;
                     case 8:
                         Console.WriteLine("8.them sinh vien vao vi tri cho truoc");
+                        Console.WriteLine("nhap ma so sinh vien: ");
+                        string _maSo = Console.ReadLine();
+                        Console.WriteLine("nhap ho ten sinh vien: ");
+                        string _hoTen = Console.ReadLine();
+                        Console.WriteLine("nhap nam sinh sinh vien: ");
+                        int _namSinh = int.Parse(Console.ReadLine());
+                        Console.WriteLine("nhap lop sinh vien: ");
+                        string _lop = Console.ReadLine();
+                        Console.WriteLine("nhap diem sinh vien: ");
+                        double _diem = double.Parse(Console.ReadLine());
+                        SinhVien newST = new SinhVien(_maSo, _hoTen
+                            , _namSinh, _lop, _diem);
+                        ds.Add(newST);
+                        Console.WriteLine("danh sach sau khi them la:");
+                        ql.XemDS(ds);
+                        Console.ReadKey();
+                        break;
+                    case 9:
+                        Console.WriteLine("9.xoa sinh vien co hoc luc yeu");
+                        Console.WriteLine("danh sach ban dau la: ");
+                        ql.XemDS(ds);
+                        var temp = ds.RemoveAll((e) =>
+                          {
+                              return string.Compare(e.xepLoai, "yeu") == 0;
+                          });
+                        Console.WriteLine("danh sach sau khi xoa la :");
+                        ql.XemDS(ds);
                         Console.ReadKey();
                         break;
                     default:
@@ -122,7 +162,7 @@ namespace TongHopQuanLy
                         break;
                 }
             }
-            //Console.ReadKey();
+            
         }
 
     }

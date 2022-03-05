@@ -9,6 +9,8 @@ namespace TongHopQuanLy
 {
     internal class QuanLySInhVien
     {
+        public delegate void ChangeCollor();
+        public event ChangeCollor cl = null;
         public void TaoDS(List<SinhVien> ds)
         {
             try
@@ -56,10 +58,14 @@ namespace TongHopQuanLy
                 + ':' + "lop".PadRight(6) + ':' + "diem TB".PadRight(6) + ':' + "xep loai".PadRight(8));
             XuatDongKe('=');
         }
+
         public void Xuat1SV(SinhVien sv)
         {
+
+            cl?.Invoke();
             Console.WriteLine(':' + sv.maSo.PadRight(10) + ':' + sv.hoTen.PadRight(30) + ':' + sv.namSinh.ToString().PadRight(8)
                 + ':' + sv.lop.PadRight(6) + ':' + sv.diem.ToString().PadRight(6) + ':' + sv.xepLoai.PadRight(8));
+           
         }
         public void XemDS(List<SinhVien> ds)
         {
@@ -132,6 +138,53 @@ namespace TongHopQuanLy
             }
             XuatDongKe('=');
         }
+        public void _ChangeColor(List<SinhVien> ds)
+        {
+            Console.WriteLine("danh sach sau do la: ");
+            XuatTieuDe();
+            foreach (SinhVien s in ds)
+            {
+                if (string.Compare(s.xepLoai, "yeu") == 0)
+                {
+                    cl += () =>
+                      {
+                          Console.ForegroundColor = ConsoleColor.DarkRed;
+                      };
+                    
+                }
+                else if(string.Compare(s.xepLoai, "trung binh") == 0)
+                {
+                    cl += () =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    };
+                }
+                else if (string.Compare(s.xepLoai, "xuat sac") == 0)
+                {
+                    cl += () =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                    };
+                }
+                else
+                {
+                    cl += () =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.White;
+                    };
+                   
+                    
+                }
+                Xuat1SV(s);
+                
+
+            }
+            cl = null;
+            
+            Console.ForegroundColor = ConsoleColor.White;
+            XuatDongKe('=');
+        }
+
     }
 
 }
