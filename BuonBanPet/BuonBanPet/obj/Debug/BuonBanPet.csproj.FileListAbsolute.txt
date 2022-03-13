@@ -1,0 +1,8 @@
+C:\Csharp\Csharp\BuonBanPet\BuonBanPet\obj\Debug\BuonBanPet.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\Csharp\BuonBanPet\BuonBanPet\obj\Debug\BuonBanPet.csproj.CoreCompileInputs.cache
+C:\Csharp\Csharp\BuonBanPet\BuonBanPet\obj\Debug\BuonBanPet.csproj.AssemblyReference.cache
+C:\Csharp\Csharp\BuonBanPet\BuonBanPet\bin\Debug\BuonBanPet.exe.config
+C:\Csharp\Csharp\BuonBanPet\BuonBanPet\bin\Debug\BuonBanPet.exe
+C:\Csharp\Csharp\BuonBanPet\BuonBanPet\bin\Debug\BuonBanPet.pdb
+C:\Csharp\Csharp\BuonBanPet\BuonBanPet\obj\Debug\BuonBanPet.exe
+C:\Csharp\Csharp\BuonBanPet\BuonBanPet\obj\Debug\BuonBanPet.pdb

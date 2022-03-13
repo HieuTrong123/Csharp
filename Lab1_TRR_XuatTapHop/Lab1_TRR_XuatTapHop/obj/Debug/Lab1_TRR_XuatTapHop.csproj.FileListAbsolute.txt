@@ -1,0 +1,8 @@
+C:\Csharp\Csharp\Lab1_TRR_XuatTapHop\Lab1_TRR_XuatTapHop\bin\Debug\Lab1_TRR_XuatTapHop.exe.config
+C:\Csharp\Csharp\Lab1_TRR_XuatTapHop\Lab1_TRR_XuatTapHop\bin\Debug\Lab1_TRR_XuatTapHop.exe
+C:\Csharp\Csharp\Lab1_TRR_XuatTapHop\Lab1_TRR_XuatTapHop\bin\Debug\Lab1_TRR_XuatTapHop.pdb
+C:\Csharp\Csharp\Lab1_TRR_XuatTapHop\Lab1_TRR_XuatTapHop\obj\Debug\Lab1_TRR_XuatTapHop.csproj.AssemblyReference.cache
+C:\Csharp\Csharp\Lab1_TRR_XuatTapHop\Lab1_TRR_XuatTapHop\obj\Debug\Lab1_TRR_XuatTapHop.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\Csharp\Lab1_TRR_XuatTapHop\Lab1_TRR_XuatTapHop\obj\Debug\Lab1_TRR_XuatTapHop.csproj.CoreCompileInputs.cache
+C:\Csharp\Csharp\Lab1_TRR_XuatTapHop\Lab1_TRR_XuatTapHop\obj\Debug\Lab1_TRR_XuatTapHop.exe
+C:\Csharp\Csharp\Lab1_TRR_XuatTapHop\Lab1_TRR_XuatTapHop\obj\Debug\Lab1_TRR_XuatTapHop.pdb
