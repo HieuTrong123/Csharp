@@ -89,17 +89,16 @@ namespace Testez
         static void Main(string[] args)
         {
 
-            
-            
-            Console.WriteLine($"This Nam: {ThoiGian.nam.ToString()})");
-            ThoiGian.nam = 2002;
-            Console.WriteLine("This Nam: {0}",
-            ThoiGian.nam.ToString());
-            //Console.ForegroundColor = ConsoleColor.Blue;
+           
+            //Console.WriteLine($"This Nam: {ThoiGian.nam.ToString()})");
+            //ThoiGian.nam = 2002;
+            //Console.WriteLine("This Nam: {0}",
+            //ThoiGian.nam.ToString());
+            ////Console.ForegroundColor = ConsoleColor.Blue;
 
-            
-            HinhVuong h = new HinhVuong(5, 5);
-            
+
+            //HinhVuong h = new HinhVuong(5, 5);
+
             //int a = 5, b = 6;
             //WriteLine($"a = {a},b={b}");
             //Swap(ref a,ref b);

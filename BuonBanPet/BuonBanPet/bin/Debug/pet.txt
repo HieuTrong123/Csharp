@@ -1,11 +1,11 @@
-akita,Nhat Ban,cho bao ve,10-15 nam,duc,32-59 kg,20000000
-alabai,Trung A,cho chan cuu,12-15 nam,duc,40-79 kg,15000000
-alaska,Hoa Ky,cho keo xe,10-12 nam,duc,32-43 kg,10000000
-alaska Giant,Hoa Ky,cho keo xe,13-15 nam,cai,60-90 kg,25000000
-Basset Hound,Anh,Cho san,10-12 nam,cai,20-29 kg,12500000
-Bac Ha,Viet Nam,Cho San,8-12 nam,duc,16-26 kg,5000000
-Bac Kinh,Trung Quoc,Cho Canh,12-15 nam,cai,3.2-6.4 kg,2500000
-Beagle,Hy Lap,Cho San,12-15 nam,cai,9-11 kg,5500000
-Becgie Bi,Bi,Cho Nghiep Vu,12-14 nam,duc,25-34 kg,15000000
-BullDog,Vuong Quoc Anh,Cho Trong Nha,8-10 nam,cai,18-25 kg,4000000
-Chihuahua,Mexico,Cho Canh,12-20 nam,cai,5-3 kg,20000000
+akita,Nhat Ban,cho bao ve,10-15 nam,duc,32-59 kg,20000000,100
+alabai,Trung A,cho chan cuu,12-15 nam,duc,40-79 kg,15000000,50
+alaska,Hoa Ky,cho keo xe,10-12 nam,duc,32-43 kg,10000000,20
+alaska Giant,Hoa Ky,cho keo xe,13-15 nam,cai,60-90 kg,25000000,200
+Basset Hound,Anh,Cho san,10-12 nam,cai,20-29 kg,12500000,15
+Bac Ha,Viet Nam,Cho San,8-12 nam,duc,16-26 kg,5000000,15
+Bac Kinh,Trung Quoc,Cho Canh,12-15 nam,cai,3.2-6.4 kg,2500000,200
+Beagle,Hy Lap,Cho San,12-15 nam,cai,9-11 kg,5500000,10
+Becgie Bi,Bi,Cho Nghiep Vu,12-14 nam,duc,25-34 kg,15000000,30
+BullDog,Vuong Quoc Anh,Cho Trong Nha,8-10 nam,cai,18-25 kg,4000000,45
+Chihuahua,Mexico,Cho Canh,12-20 nam,cai,5-3 kg,20000000,5

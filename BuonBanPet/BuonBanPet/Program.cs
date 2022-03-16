@@ -7,7 +7,27 @@ using System.IO;
 
 namespace BuonBanPet
 {
+    public class TongThuNhap
+    {
+        string tenMatHang { get; set; }
+        ulong thuNhap { get; set; }
+        string loaiMatHang { get; set; }
+        string xuatSu { get; set; }
+        public TongThuNhap(string tenMatHang,ulong thuNhap,string loaiMatHang,string XuatSu)
+        {
+            this.xuatSu = XuatSu;
+            this.thuNhap = thuNhap;
+            this.loaiMatHang = loaiMatHang;
+            this.tenMatHang = tenMatHang;
+        }
 
+    }
+
+
+    public class MatHangBanChay
+    {
+
+    }
     public interface IBanPet
     {
         void XuatThongTinKhachHang(List<Buyer> ds_buyer);
@@ -34,8 +54,9 @@ namespace BuonBanPet
         public string gioiTinh { get; set; }
         public string canNang { get; set; }
         public int gia { get; set; }
+        public int soLuong { get; set; }
         public BanPet(string Name, string nguonGoc, string loai,
-            string tuoiTho, string gioiTinh, string canNang, int gia)
+            string tuoiTho, string gioiTinh, string canNang, int gia, int soLuong)
         {
             this.Name = Name;
             this.gia = gia;
@@ -44,10 +65,12 @@ namespace BuonBanPet
             this.tuoiTho = tuoiTho;
             this.canNang = canNang;
             this.gioiTinh = gioiTinh;
+            this.soLuong = soLuong;
         }
     }
     public class QuanLyPet : IBanPet
     {
+
         void XuatThongTin1KhachHang(Buyer b)
         {
             Console.WriteLine($"ho ten : {b.Name}");
@@ -56,7 +79,7 @@ namespace BuonBanPet
             Console.WriteLine("so pet da thanh toan la:");
             foreach (var x in b.ds_Pet)
             {
-                Console.WriteLine($"da thanh toan thanh cong {x.loai} {x.Name} ");
+                Console.WriteLine($"da thanh toan thanh cong {x.soLuong} {x.loai} {x.Name} ");
             }
         }
         public void XuatThongTinKhachHang(List<Buyer> ds_buyer)
@@ -72,8 +95,9 @@ namespace BuonBanPet
         }
         public void BanVatNuoi(List<BanPet> ds, List<Buyer> ds_buyer)
         {
-            int i;
+            int i = 0;
             int temp = 1;
+            int soLuongPet = 0;
             Buyer buyer = new Buyer();
             DateTime dt = DateTime.Now;
             buyer.ds_Pet = new List<BanPet>();
@@ -87,12 +111,12 @@ namespace BuonBanPet
                 Console.WriteLine("nhap nam sinh nguoi mua: ");
 
                 buyer.namSinh = int.Parse(Console.ReadLine());
-                if(buyer.namSinh > dt.Year)
+                if (buyer.namSinh > dt.Year)
                 {
                     Console.WriteLine("nam sinh khong hop le hay nhap lai!!");
                 }
-            }while(buyer.namSinh > dt.Year);
-           
+            } while (buyer.namSinh > dt.Year);
+
 
 
             Console.WriteLine("nhap dia chi thuong tru: ");
@@ -111,21 +135,41 @@ namespace BuonBanPet
 
                 Console.WriteLine($"thu cung thu {i} la: ");
                 XuatTieuDe();
-                XuatMotPet(ds[i]);
+                XuatMotPet(ds[i], i);
                 XuatDongKe('=');
                 int tienDu;
                 do
                 {
 
+
                     Console.WriteLine("nhap so tien de thanh toan Pet : ");
                     buyer.soTienHT = int.Parse(Console.ReadLine());
 
 
-                    tienDu = (int)buyer.soTienHT - ds[i].gia;
+                    do
+                    {
+                        Console.WriteLine($"nhap so luong pet {ds[i].Name} can mua:");
+                        soLuongPet = int.Parse(Console.ReadLine());
+                        if (soLuongPet > ds[i].soLuong)
+                        {
+                            char kyTuThoat;
+                            Console.WriteLine("so luong pet khong du de dap ung yeu cau !!");
+                            Console.WriteLine("ban co muon nhap lai so luong khong (nhap mot ky tu bat ky neu co ,neu khong thi nhap x): ");
+                            kyTuThoat = char.Parse(Console.ReadLine());
+                            if (kyTuThoat == 'x')
+                            {
+                                temp = 0;
+                            }
+                        }
+                    } while (soLuongPet > ds[i].soLuong && temp == 1);
+
+
+
+                    tienDu = (int)buyer.soTienHT - ds[i].gia * soLuongPet;
                     if (tienDu < 0)
                     {
                         char kyTuThoat;
-                        Console.WriteLine($"so tien hien tai la {buyer.soTienHT} khong du de thuc hien thanh toan so tien {ds[i].gia} cua Pet {ds[i].Name}");
+                        Console.WriteLine($"so tien hien tai la {buyer.soTienHT} khong du de thuc hien thanh toan so tien {ds[i].gia * soLuongPet} cua {soLuongPet} Pet {ds[i].Name}");
                         Console.WriteLine("ban co muon nhap lai so tien thanh toan khong (nhap mot ky tu bat ky neu co ,neu khong thi nhap x): ");
                         kyTuThoat = char.Parse(Console.ReadLine());
                         if (kyTuThoat == 'x')
@@ -140,6 +184,7 @@ namespace BuonBanPet
                 {
 
                     buyer.ds_Pet.Add(ds[i]);
+                    ds[i].soLuong -= soLuongPet;
                     Console.WriteLine($"thanh toan thanh cong pet {ds[i].Name} !!");
                     Console.WriteLine($"so tien du la: {tienDu}");
                     char kyTuThoat;
@@ -150,11 +195,14 @@ namespace BuonBanPet
                         temp = 0;
                     }
 
+
+
                 }
-                ds.RemoveAt(i);
+
             }
             ds_buyer.Add(buyer);
-
+            Console.WriteLine($"danh sach sau khi thanh toan {soLuongPet} {ds[i].loai} {ds[i].Name} la:");
+            XuatDanhSachPet(ds);
         }
 
         public delegate void ChangeCollor();
@@ -162,7 +210,7 @@ namespace BuonBanPet
         public void ThemPet(List<BanPet> ds)
         {
             string name, nguonGoc, canNang, loai, tuoiTho, gioiTinh;
-            int gia;
+            int gia, soLuong;
             Console.WriteLine("nhap ten Pet:");
             name = Console.ReadLine();
             Console.WriteLine("nhap nguon goc Pet:");
@@ -177,8 +225,10 @@ namespace BuonBanPet
             gioiTinh = Console.ReadLine();
             Console.WriteLine("nhap gia cua Pet:");
             gia = int.Parse(Console.ReadLine());
+            Console.WriteLine("nhap so luong cua Pet:");
+            soLuong = int.Parse(Console.ReadLine());
             BanPet petNew = new BanPet(name, nguonGoc, loai, tuoiTho,
-                gioiTinh, canNang, gia);
+                gioiTinh, canNang, gia, soLuong);
             ds.Add(petNew);
         }
         public void FixPet(List<BanPet> ds, string canSua, int x)
@@ -222,6 +272,11 @@ namespace BuonBanPet
                 Console.WriteLine("sua gia cua Pet:");
                 ds[x].gia = int.Parse(Console.ReadLine());
             }
+            else if (string.Compare(canSua, "so luong") == 0)
+            {
+                Console.WriteLine("sua so luong cua Pet:");
+                ds[x].soLuong = int.Parse(Console.ReadLine());
+            }
 
         }
         private void XuatDongKe(char x)
@@ -229,7 +284,7 @@ namespace BuonBanPet
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine();
             Console.Write(':');
-            for (int i = 0; i < 110; i++)
+            for (int i = 0; i < 120; i++)
             {
                 Console.Write(x);
 
@@ -241,8 +296,8 @@ namespace BuonBanPet
         {
 
             XuatDongKe('=');
-            Console.WriteLine(':' + "ten".PadRight(20) + ':' + "nguon goc".PadRight(20) + ':' + "loai".PadRight(20)
-                + ':' + "tuoi tho".PadRight(10) + ':' + "gioi tinh".PadRight(10) + ':' + "can nang".PadRight(12) + ':' + "gia".PadRight(10));
+            Console.WriteLine(':' + "stt".PadRight(2) + ':' + "ten".PadRight(20) + ':' + "nguon goc".PadRight(20) + ':' + "loai".PadRight(20)
+                + ':' + "tuoi tho".PadRight(10) + ':' + "gioi tinh".PadRight(10) + ':' + "can nang".PadRight(12) + ':' + "gia".PadRight(10) + ':' + "so luong".PadRight(8));
             XuatDongKe('=');
         }
 
@@ -271,12 +326,13 @@ namespace BuonBanPet
             }
 
         }
-        private void XuatMotPet(BanPet pet)
+        private void XuatMotPet(BanPet pet, int temp)
         {
+
             ChuyenColor(pet);
             cl?.Invoke();
-            Console.WriteLine(':' + pet.Name.PadRight(20) + ':' + pet.nguonGoc.PadRight(20) + ':' + pet.loai.PadRight(20)
-               + ':' + pet.tuoiTho.PadRight(10) + ':' + pet.gioiTinh.PadRight(10) + ':' + pet.canNang.PadRight(12) + ':' + pet.gia.ToString().PadRight(10));
+            Console.WriteLine(':' + temp.ToString().PadRight(2) + ':' + pet.Name.PadRight(20) + ':' + pet.nguonGoc.PadRight(20) + ':' + pet.loai.PadRight(20)
+               + ':' + pet.tuoiTho.PadRight(10) + ':' + pet.gioiTinh.PadRight(10) + ':' + pet.canNang.PadRight(12) + ':' + pet.gia.ToString().PadRight(10) + ':' + pet.soLuong.ToString().PadRight(8));
 
         }
 
@@ -286,7 +342,7 @@ namespace BuonBanPet
             XuatTieuDe();
             foreach (BanPet pet in ds)
             {
-                XuatMotPet(pet);
+                XuatMotPet(pet, temp);
                 temp++;
                 if (temp % 5 == 0)
                 {
@@ -308,7 +364,7 @@ namespace BuonBanPet
                     {
                         var tam = temp.Split(',');
                         var _temp = new BanPet(tam[0], tam[1],
-                            tam[2], tam[3], tam[4], tam[5], int.Parse(tam[6]));
+                            tam[2], tam[3], tam[4], tam[5], int.Parse(tam[6]), int.Parse(tam[7]));
                         ds.Add(_temp);
                     }
                 }
@@ -343,6 +399,9 @@ namespace BuonBanPet
                 Console.WriteLine("5.xep vat nuoi theo tung loai");
                 Console.WriteLine("6.ban vat nuoi");
                 Console.WriteLine("7.xem danh sach vat nuoi da duoc ban");
+                Console.WriteLine("8.xuat tong doanh thu tung mat hang cac ngay");
+                Console.WriteLine("9.xuat mat hang ban chay nhat");
+                
                 Console.WriteLine("\n\n\t\t========MENU========");
 
 
@@ -377,10 +436,12 @@ namespace BuonBanPet
                     case 4:
                         Console.WriteLine("4.sua vat nuoi");
                         int vt;
-                        Console.WriteLine($"nhap vi tri cua pet can sua(tu 0 den {ds.Count - 1}:");
+                        Console.WriteLine("danh sach ban dau la:");
+                        ql.XuatDanhSachPet(ds);
+                        Console.WriteLine($"nhap vi tri cua pet can sua(tu 0 den {ds.Count - 1}):");
                         vt = int.Parse(Console.ReadLine());
                         string canSua;
-                        Console.WriteLine("nhap thong tin du lieu can sua (gom: ten,nguon goc,gioi tinh,can nang,tuoi tho,loai,gia): ");
+                        Console.WriteLine("nhap thong tin du lieu can sua (gom: ten,nguon goc,gioi tinh,can nang,tuoi tho,loai,gia,so luong): ");
                         canSua = Console.ReadLine();
                         ql.FixPet(ds, canSua, vt);
                         Console.WriteLine("xuat danh sach sau khi chinh sua thong tin Pet:");
@@ -413,6 +474,17 @@ namespace BuonBanPet
                         ql.XuatThongTinKhachHang(ds_buyer);
                         Console.ReadKey();
                         break;
+                    case 8:
+                        Console.WriteLine("8.xuat tong doanh thu tung mat hang cac ngay");
+                        
+                        Console.ReadKey();
+                        break;
+                    case 9:
+                        Console.WriteLine("9.xuat mat hang ban chay nhat");
+                        Console.ReadKey();
+                        break;
+                    
+
                     default:
                         Console.WriteLine("lua chon cua ban nhap khong ton tai hay nhap lai!!");
                         break;
