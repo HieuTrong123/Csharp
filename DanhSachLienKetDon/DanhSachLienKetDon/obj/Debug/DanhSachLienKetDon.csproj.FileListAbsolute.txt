@@ -1,8 +1,0 @@
-C:\Csharp\Csharp\DanhSachLienKetDon\DanhSachLienKetDon\bin\Debug\DanhSachLienKetDon.exe.config
-C:\Csharp\Csharp\DanhSachLienKetDon\DanhSachLienKetDon\bin\Debug\DanhSachLienKetDon.exe
-C:\Csharp\Csharp\DanhSachLienKetDon\DanhSachLienKetDon\bin\Debug\DanhSachLienKetDon.pdb
-C:\Csharp\Csharp\DanhSachLienKetDon\DanhSachLienKetDon\obj\Debug\DanhSachLienKetDon.csproj.AssemblyReference.cache
-C:\Csharp\Csharp\DanhSachLienKetDon\DanhSachLienKetDon\obj\Debug\DanhSachLienKetDon.csproj.SuggestedBindingRedirects.cache
-C:\Csharp\Csharp\DanhSachLienKetDon\DanhSachLienKetDon\obj\Debug\DanhSachLienKetDon.csproj.CoreCompileInputs.cache
-C:\Csharp\Csharp\DanhSachLienKetDon\DanhSachLienKetDon\obj\Debug\DanhSachLienKetDon.exe
-C:\Csharp\Csharp\DanhSachLienKetDon\DanhSachLienKetDon\obj\Debug\DanhSachLienKetDon.pdb
