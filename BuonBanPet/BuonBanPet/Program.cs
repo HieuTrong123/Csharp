@@ -59,6 +59,8 @@ namespace BuonBanPet
         public int namSinh { get; set; }
         public string diaChi { get; set; }
         public int soTienHT { get; set; }
+        
+
         public List<BanPet> ds_Pet;
     }
     public class BanPet
@@ -71,6 +73,7 @@ namespace BuonBanPet
         public string canNang { get; set; }
         public int gia { get; set; }
         public int soLuong { get; set; }
+        public int soLuongPet { get; set; }
         public BanPet(string Name, string nguonGoc, string loai,
             string tuoiTho, string gioiTinh, string canNang, int gia, int soLuong)
         {
@@ -92,13 +95,26 @@ namespace BuonBanPet
         }
         void XuatThongTin1KhachHang(Buyer b)
         {
+
             Console.WriteLine($"ho ten : {b.Name}");
             Console.WriteLine($"nam sinh : {b.namSinh}");
             Console.WriteLine($"dia chi : {b.diaChi}");
-            Console.WriteLine("so pet da thanh toan la:");
-            foreach (var x in b.ds_Pet)
+            Console.WriteLine("so pet da thanh toan la :");
+            for(int i = 0; i < b.ds_Pet.Count; i++)
             {
-                Console.WriteLine($"da thanh toan thanh cong {x.loai} {x.Name} ");
+                
+                
+                for (int j = i + 1; j < b.ds_Pet.Count; j++)
+                {
+                    if (b.ds_Pet[j].Name == b.ds_Pet[i].Name&& b.ds_Pet[j].loai == b.ds_Pet[i].loai)
+                    {
+                        b.ds_Pet[i].soLuongPet += b.ds_Pet[j].soLuongPet;
+                        b.ds_Pet.Remove(b.ds_Pet[j]);
+                    }
+
+                }
+                int x = b.ds_Pet[i].soLuongPet;
+                Console.WriteLine($"{x} pet {b.ds_Pet[i].Name}");
             }
         }
         public void XuatThongTinKhachHang(List<Buyer> ds_buyer)
@@ -120,16 +136,16 @@ namespace BuonBanPet
             month = dt.Month;
             day = dt.Day;
             
-                File.AppendAllText("TongThuNhap.txt", $"\n\n\t\t\tdoanh thu ngay {day} thang {month} nam {year}:");
+                File.AppendAllText("TongThuNhap.txt", $"\n\n\t\t\tdoanh thu ngay {day} thang {month} nam {year}:\n");
 
                 for (int i = 0; i < tongThuNhap.Count; i++)
                 {
 
-                    File.AppendAllText("TongThuNhap.txt", $"\n\n\t\t=======Mat Hang thu {i + 1}========");
-                    File.AppendAllText("TongThuNhap.txt", $"ten: {tongThuNhap[i].tenMatHang}");
-                    File.AppendAllText("TongThuNhap.txt", $"xuat su: {tongThuNhap[i].xuatSu}");
-                    File.AppendAllText("TongThuNhap.txt", $"loai: {tongThuNhap[i].loaiMatHang}");
-                    File.AppendAllText("TongThuNhap.txt", $"thu nhap: {tongThuNhap[i].thuNhap}");
+                    File.AppendAllText("TongThuNhap.txt", $"\n\n\t\t=======Mat Hang thu {i + 1}========\n");
+                    File.AppendAllText("TongThuNhap.txt", $"ten: {tongThuNhap[i].tenMatHang}\n");
+                    File.AppendAllText("TongThuNhap.txt", $"xuat su: {tongThuNhap[i].xuatSu}\n");
+                    File.AppendAllText("TongThuNhap.txt", $"loai: {tongThuNhap[i].loaiMatHang}\n");
+                    File.AppendAllText("TongThuNhap.txt", $"thu nhap: {tongThuNhap[i].thuNhap}\n");
                 }
                 Console.WriteLine("danh sach da duoc luu trong file TongThuNhap.txt");
             
@@ -143,14 +159,14 @@ namespace BuonBanPet
             month = dt.Month;
             day = dt.Day;
 
-            File.AppendAllText("banchay.txt", $"\n\n\t\t\tmat hang ban chay nhat ngay {day} thang {month} nam {year}:");
+            File.AppendAllText("banchay.txt", $"\n\n\t\t\tmat hang ban chay nhat ngay {day} thang {month} nam {year}:\n");
             for (int i = 0; i < matHangBanChay.Count; i++)
             {
-                File.AppendAllText("banchay.txt", $"\n\n\t\t=======Mat Hang thu {i + 1}========");
-                File.AppendAllText("banchay.txt", $"ten: {matHangBanChay[i].tenMatHang}");
-                File.AppendAllText("banchay.txt", $"xuat su: {matHangBanChay[i].xuatSu}");
-                File.AppendAllText("banchay.txt", $"loai: {matHangBanChay[i].loaiMatHang}");
-                File.AppendAllText("banchay.txt", $"so mat hang duoc ban: {matHangBanChay[i].tongSoKuong}");
+                File.AppendAllText("banchay.txt", $"\n\n\t\t=======Mat Hang thu {i + 1}========\n");
+                File.AppendAllText("banchay.txt", $"ten: {matHangBanChay[i].tenMatHang}\n");
+                File.AppendAllText("banchay.txt", $"xuat su: {matHangBanChay[i].xuatSu}\n");
+                File.AppendAllText("banchay.txt", $"loai: {matHangBanChay[i].loaiMatHang}\n");
+                File.AppendAllText("banchay.txt", $"so mat hang duoc ban: {matHangBanChay[i].tongSoKuong}\n");
 
             }
             Console.WriteLine("danh sach da duoc luu trong file banchay.txt");
@@ -220,8 +236,8 @@ namespace BuonBanPet
                         {
                             char kyTuThoat;
                             Console.WriteLine("so luong pet khong du de dap ung yeu cau !!");
-                            Console.WriteLine("ban co muon nhap lai so luong khong (nhap mot ky tu bat ky neu co ,neu khong thi nhap x): ");
-                            kyTuThoat = char.Parse(Console.ReadLine());
+                            Console.WriteLine("ban co muon nhap lai so luong khong (enter neu co va 1 ky tu bat ky de dung lai");
+                            kyTuThoat = char.Parse(Console.ReadLine() == "" ? "y" : "x");
                             if (kyTuThoat == 'x')
                             {
                                 temp = 0;
@@ -232,12 +248,14 @@ namespace BuonBanPet
 
 
                     tienDu = (int)buyer.soTienHT - ds[i].gia * soLuongPet;
+                    
+                    ds[i].soLuongPet = soLuongPet;
                     if (tienDu < 0)
                     {
                         char kyTuThoat;
                         Console.WriteLine($"so tien hien tai la {buyer.soTienHT} khong du de thuc hien thanh toan so tien {ds[i].gia * soLuongPet} cua {soLuongPet} Pet {ds[i].Name}");
-                        Console.WriteLine("ban co muon nhap lai so tien thanh toan khong (nhap mot ky tu bat ky neu co ,neu khong thi nhap x): ");
-                        kyTuThoat = char.Parse(Console.ReadLine());
+                        Console.WriteLine("ban co muon nhap lai so tien thanh toan khong (enter de tiep tuc va ky tu bat ky de dung la i): ");
+                        kyTuThoat = char.Parse(Console.ReadLine() == "" ? "y" : "x");
                         if (kyTuThoat == 'x')
                         {
                             temp = 0;
@@ -257,12 +275,13 @@ namespace BuonBanPet
                     buyer.ds_Pet.Add(ds[i]);
                     ds[i].soLuong -= soLuongPet;
 
+
                     Console.WriteLine($"thanh toan thanh cong pet {ds[i].Name} !!");
                     Console.WriteLine($"so tien du la: {tienDu}");
                     char kyTuThoat;
                     Console.WriteLine("ban co muon mua pet nua khong (nhap mot " +
-                        "ky tu bat ky de tiep tuc mua ,neu khong thi nhap x): ");
-                    kyTuThoat = char.Parse(Console.ReadLine());
+                        "enter neu co va ky tu bat ky de dung lai!): ");
+                    kyTuThoat = char.Parse(Console.ReadLine()==""?"y":"x");
                     if (kyTuThoat == 'x')
                     {
                         temp = 0;
@@ -548,12 +567,12 @@ namespace BuonBanPet
                         Console.ReadKey();
                         break;
                     case 8:
-                        Console.WriteLine("8.xuat tong doanh thu tung mat hang cac ngay");
+                        Console.WriteLine("8.luu tong doanh thu tung mat hang cac ngay ra file");
                         ql.XuatDSThuNhap(tongThuNhap);
                         Console.ReadKey();
                         break;
                     case 9:
-                        Console.WriteLine("9.xuat mat hang ban chay nhat");
+                        Console.WriteLine("9.luu mat hang ban chay nhat ra file");
                         ql.XuatDSBanChay(matHangBanChay);
                         Console.ReadKey();
                         break;
