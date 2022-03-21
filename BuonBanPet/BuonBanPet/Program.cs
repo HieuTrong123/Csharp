@@ -53,6 +53,20 @@ namespace BuonBanPet
         void XuatDSThuNhap(List<TongThuNhap> tongThuNhap);
         void XuatDSBanChay(List<MatHangBanChay> matHangBanChay);
     }
+    public class PetDuocThanhToan
+    {
+       public string Name { get; set; }
+        public string loai { get; set; }
+        public string suatXu { get; set; }
+        public int soLuongDaThanhToan { get; set; }
+        public PetDuocThanhToan(string Name,string loai,string XuatSu,int soLuongThanhToan)
+        {
+            this.Name = Name;
+            this.suatXu = XuatSu;
+            this.soLuongDaThanhToan= soLuongThanhToan;
+            this.loai = loai;
+        }
+    }
     public class Buyer
     {
         public string Name { get; set; }
@@ -61,7 +75,7 @@ namespace BuonBanPet
         public int soTienHT { get; set; }
         
 
-        public List<BanPet> ds_Pet;
+        public List<PetDuocThanhToan> ds_PetThanhToan;
     }
     public class BanPet
     {
@@ -89,46 +103,50 @@ namespace BuonBanPet
     }
     public class QuanLyPet : IBanPet
     {
-        public void TongThuNhapTungMatHang(List<TongThuNhap> ds, List<Buyer> ds_buyer)
-        {
-
-        }
+        
         void XuatThongTin1KhachHang(Buyer b)
         {
 
-            Console.WriteLine($"ho ten : {b.Name}");
-            Console.WriteLine($"nam sinh : {b.namSinh}");
-            Console.WriteLine($"dia chi : {b.diaChi}");
-            Console.WriteLine("so pet da thanh toan la :");
-            for(int i = 0; i < b.ds_Pet.Count; i++)
+            File.AppendAllText("quanlykhachhang.txt", $"ho ten : {b.Name}\n");
+            File.AppendAllText("quanlykhachhang.txt", $"nam sinh : {b.namSinh}\n");
+            File.AppendAllText("quanlykhachhang.txt", $"dia chi : {b.diaChi}\n");
+            File.AppendAllText("quanlykhachhang.txt", "so pet da thanh toan la :\n");
+            foreach (var x in b.ds_PetThanhToan)
             {
-                
-                
-                for (int j = i + 1; j < b.ds_Pet.Count; j++)
-                {
-                    if (b.ds_Pet[j].Name == b.ds_Pet[i].Name&& b.ds_Pet[j].loai == b.ds_Pet[i].loai)
-                    {
-                        b.ds_Pet[i].soLuongPet += b.ds_Pet[j].soLuongPet;
-                        b.ds_Pet.Remove(b.ds_Pet[j]);
-                    }
-
-                }
-                int x = b.ds_Pet[i].soLuongPet;
-                Console.WriteLine($"{x} pet {b.ds_Pet[i].Name}");
+                File.AppendAllText("quanlykhachhang.txt", $"{x.soLuongDaThanhToan} pet {x.loai} {x.suatXu} {x.Name}\n");
             }
+           
         }
-        public void XuatThongTinKhachHang(List<Buyer> ds_buyer)
+        private List<PetDuocThanhToan> XuLyPetDuocThanhToan(List<PetDuocThanhToan> petDuocThanhToan)
         {
-            int temp = 1;
-            foreach (var x in ds_buyer)
+            List<PetDuocThanhToan> pets = new List<PetDuocThanhToan>();
+            for(int i = 0; i < petDuocThanhToan.Count; i++)
             {
-                Console.WriteLine($"\n\n\t\tKHACH HANG THU {temp} la : ");
-                temp++;
-                XuatThongTin1KhachHang(x);
-                Console.WriteLine();
+                PetDuocThanhToan p;
+                int x = petDuocThanhToan[i].soLuongDaThanhToan;
+                for(int j = i + 1; j < petDuocThanhToan.Count; j++)
+                {
+                    if(petDuocThanhToan[i].Name==petDuocThanhToan[j].Name
+                       && petDuocThanhToan[i].loai == petDuocThanhToan[j].loai
+                       && petDuocThanhToan[i].suatXu == petDuocThanhToan[j].suatXu)
+                    {
+                        x +=  petDuocThanhToan[j].soLuongDaThanhToan;
+                        petDuocThanhToan.Remove(petDuocThanhToan[j]);
+                        j--;
+                    }
+                    
+                }
+                p = new PetDuocThanhToan(petDuocThanhToan[i].Name, petDuocThanhToan[i].loai, petDuocThanhToan[i].suatXu, x);
+                pets.Add(p);
             }
+
+            return pets;
+
         }
-        public void XuatDSThuNhap(List<TongThuNhap> tongThuNhap)
+        
+            
+        
+        public void XuatThongTinKhachHang(List<Buyer> ds_buyer)
         {
             int month, day;
             DateTime dt = DateTime.Now;
@@ -136,6 +154,51 @@ namespace BuonBanPet
             month = dt.Month;
             day = dt.Day;
             
+            File.AppendAllText("banchay.txt", $"\n\n\t\t\tmat hang ban chay nhat ngay {day} thang {month} nam {year}:\n");
+            int temp = 1;
+            foreach (var x in ds_buyer)
+            {
+                x.ds_PetThanhToan=XuLyPetDuocThanhToan(x.ds_PetThanhToan);
+                File.AppendAllText("quanlykhachhang.txt", $"\n\n\t\tKHACH HANG THU {temp} la : \n");
+                temp++;
+                XuatThongTin1KhachHang(x);
+                Console.WriteLine();
+            }
+            Console.WriteLine("da luu thong tin khach hang vao file quanlykhachhang.txt");
+        }
+        private List<TongThuNhap> XuLyThuNhap (List<TongThuNhap> tongThuNhap)
+        {
+            List<TongThuNhap> NewTongThuNhap=new List<TongThuNhap>();
+            for(int i = 0; i < tongThuNhap.Count; i++)
+            {
+                TongThuNhap NewTongThuNhap1;
+                int x = tongThuNhap[i].thuNhap;
+                for(int j = i + 1; j < tongThuNhap.Count; j++)
+                {
+                    if (tongThuNhap[i].tenMatHang == tongThuNhap[j].tenMatHang
+                        && tongThuNhap[i].loaiMatHang == tongThuNhap[j].loaiMatHang
+                        && tongThuNhap[i].xuatSu == tongThuNhap[j].xuatSu)
+                    {
+                        x += tongThuNhap[j].thuNhap;
+                        tongThuNhap.Remove(tongThuNhap[j]);
+                        j--;
+                    }
+                }
+                NewTongThuNhap1=new TongThuNhap(tongThuNhap[i].tenMatHang,x,tongThuNhap[i].loaiMatHang,tongThuNhap[i].xuatSu);
+                NewTongThuNhap.Add(NewTongThuNhap1);
+            }
+
+            return NewTongThuNhap;
+        }
+
+        public void XuatDSThuNhap(List<TongThuNhap> tongThuNhap)
+        {
+            int month, day;
+            DateTime dt = DateTime.Now;
+            int year = dt.Year;
+            month = dt.Month;
+            day = dt.Day;
+            tongThuNhap=XuLyThuNhap(tongThuNhap);
                 File.AppendAllText("TongThuNhap.txt", $"\n\n\t\t\tdoanh thu ngay {day} thang {month} nam {year}:\n");
 
                 for (int i = 0; i < tongThuNhap.Count; i++)
@@ -151,6 +214,33 @@ namespace BuonBanPet
             
 
         }
+        private List<MatHangBanChay> XuLyMang(List<MatHangBanChay> matHangBanChay)
+        {
+            List<MatHangBanChay> NewListMatHangBanChay=new List<MatHangBanChay>();
+
+           
+            for (int i = 0;i < matHangBanChay.Count; i++)
+            {
+                MatHangBanChay NewMatHang;
+                int x = matHangBanChay[i].tongSoKuong;
+                for (int j = i+1;j< matHangBanChay.Count; j++)
+                {
+                    if (matHangBanChay[i].tenMatHang == matHangBanChay[j].tenMatHang
+                        && matHangBanChay[i].loaiMatHang == matHangBanChay[j].loaiMatHang
+                        && matHangBanChay[i].xuatSu == matHangBanChay[j].xuatSu)
+                    {
+                        x += matHangBanChay[j].tongSoKuong;
+                        matHangBanChay.Remove(matHangBanChay[j]);
+                        j--;
+                    }
+                }
+                NewMatHang = new MatHangBanChay(x
+                           , matHangBanChay[i].tenMatHang, matHangBanChay[i].loaiMatHang, matHangBanChay[i].xuatSu);
+                NewListMatHangBanChay.Add(NewMatHang);
+            }
+   
+            return NewListMatHangBanChay;
+        }
         public void XuatDSBanChay(List<MatHangBanChay> matHangBanChay)
         {
             int month, day;
@@ -158,7 +248,7 @@ namespace BuonBanPet
             int year = dt.Year;
             month = dt.Month;
             day = dt.Day;
-
+            matHangBanChay = XuLyMang(matHangBanChay);
             File.AppendAllText("banchay.txt", $"\n\n\t\t\tmat hang ban chay nhat ngay {day} thang {month} nam {year}:\n");
             for (int i = 0; i < matHangBanChay.Count; i++)
             {
@@ -182,7 +272,7 @@ namespace BuonBanPet
             int soLuongPet = 0;
             Buyer buyer = new Buyer();
             DateTime dt = DateTime.Now;
-            buyer.ds_Pet = new List<BanPet>();
+            buyer.ds_PetThanhToan = new List<PetDuocThanhToan>();
 
             Console.WriteLine("nhap ten nguoi mua :");
             buyer.Name = Console.ReadLine();
@@ -249,7 +339,7 @@ namespace BuonBanPet
 
                     tienDu = (int)buyer.soTienHT - ds[i].gia * soLuongPet;
                     
-                    ds[i].soLuongPet = soLuongPet;
+                   
                     if (tienDu < 0)
                     {
                         char kyTuThoat;
@@ -272,7 +362,8 @@ namespace BuonBanPet
                     MatHangBanChay hangBanChay = new MatHangBanChay(soLuongPet, ds[i].Name,
                         ds[i].loai, ds[i].nguonGoc);
                     matHangBanChay.Add(hangBanChay);
-                    buyer.ds_Pet.Add(ds[i]);
+                    PetDuocThanhToan petDuocThanhToan = new PetDuocThanhToan(ds[i].Name, ds[i].loai, ds[i].nguonGoc, soLuongPet);
+                    buyer.ds_PetThanhToan.Add(petDuocThanhToan);
                     ds[i].soLuong -= soLuongPet;
 
 
@@ -493,7 +584,7 @@ namespace BuonBanPet
                 Console.WriteLine("7.xem danh sach vat nuoi da duoc ban");
                 Console.WriteLine("8.xuat tong doanh thu tung mat hang cac ngay");
                 Console.WriteLine("9.xuat mat hang ban chay nhat");
-
+                Console.WriteLine("10.xoa pet");
                 Console.WriteLine("\n\n\t\t========MENU========");
 
 
@@ -576,7 +667,22 @@ namespace BuonBanPet
                         ql.XuatDSBanChay(matHangBanChay);
                         Console.ReadKey();
                         break;
-
+                    case 10:
+                        Console.WriteLine("10.xoa pet");
+                        string Name,loai,nguonGoc;
+                        Console.WriteLine("nhap ten pet can xoa: ");
+                        Name=Console.ReadLine();
+                        Console.WriteLine("nhap nguon goc pet: ");
+                        nguonGoc=Console.ReadLine();
+                        Console.WriteLine("nhap loai pet: ");
+                        loai=Console.ReadLine();
+                        ds.RemoveAll((a) =>
+                        {
+                            return (a.Name==Name&&a.nguonGoc==nguonGoc&&a.loai==loai);
+                        });
+                        Console.WriteLine("danh sach sau khi xoa la: ");
+                        ql.XuatDanhSachPet(ds);
+                        break;
 
                     default:
                         Console.WriteLine("lua chon cua ban nhap khong ton tai hay nhap lai!!");
