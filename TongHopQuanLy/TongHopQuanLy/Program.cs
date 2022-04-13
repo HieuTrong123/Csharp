@@ -110,6 +110,7 @@ namespace TongHopQuanLy
                         Console.WriteLine("danh sach sinh vien truoc khi chuyen la: ");
                         ql.XemDS(ds);
                         ql._ChangeColor(ds);
+                        
 
 
                         Console.ReadKey();

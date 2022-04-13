@@ -146,37 +146,41 @@ namespace TongHopQuanLy
             {
                 if (string.Compare(s.xepLoai, "yeu") == 0)
                 {
-                    cl += () =>
+                    cl = () =>
                       {
                           Console.ForegroundColor = ConsoleColor.DarkRed;
+                          
                       };
                     
                 }
                 else if(string.Compare(s.xepLoai, "trung binh") == 0)
                 {
-                    cl += () =>
+                    cl = () =>
                     {
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
+                      
                     };
                 }
                 else if (string.Compare(s.xepLoai, "xuat sac") == 0)
                 {
-                    cl += () =>
+                    cl = () =>
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
+                       
                     };
                 }
                 else
                 {
-                    cl += () =>
+                    cl = () =>
                     {
                         Console.ForegroundColor = ConsoleColor.White;
+                        
                     };
                    
                     
                 }
+
                 Xuat1SV(s);
-                
 
             }
             cl = null;
