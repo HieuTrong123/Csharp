@@ -1,0 +1,8 @@
+C:\Csharp\tuHocCharp\usingLinqInCsharp\usingLinqInCsharp\bin\Debug\usingLinqInCsharp.exe.config
+C:\Csharp\tuHocCharp\usingLinqInCsharp\usingLinqInCsharp\bin\Debug\usingLinqInCsharp.exe
+C:\Csharp\tuHocCharp\usingLinqInCsharp\usingLinqInCsharp\bin\Debug\usingLinqInCsharp.pdb
+C:\Csharp\tuHocCharp\usingLinqInCsharp\usingLinqInCsharp\obj\Debug\usingLinqInCsharp.csproj.AssemblyReference.cache
+C:\Csharp\tuHocCharp\usingLinqInCsharp\usingLinqInCsharp\obj\Debug\usingLinqInCsharp.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\tuHocCharp\usingLinqInCsharp\usingLinqInCsharp\obj\Debug\usingLinqInCsharp.csproj.CoreCompileInputs.cache
+C:\Csharp\tuHocCharp\usingLinqInCsharp\usingLinqInCsharp\obj\Debug\usingLinqInCsharp.exe
+C:\Csharp\tuHocCharp\usingLinqInCsharp\usingLinqInCsharp\obj\Debug\usingLinqInCsharp.pdb
