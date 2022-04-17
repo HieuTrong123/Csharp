@@ -1,0 +1,8 @@
+C:\Csharp\tuHocCharp\SuDung_Linq_InCsharrp\SuDung_Linq_InCsharrp\bin\Debug\SuDung_Linq_InCsharrp.exe.config
+C:\Csharp\tuHocCharp\SuDung_Linq_InCsharrp\SuDung_Linq_InCsharrp\bin\Debug\SuDung_Linq_InCsharrp.exe
+C:\Csharp\tuHocCharp\SuDung_Linq_InCsharrp\SuDung_Linq_InCsharrp\bin\Debug\SuDung_Linq_InCsharrp.pdb
+C:\Csharp\tuHocCharp\SuDung_Linq_InCsharrp\SuDung_Linq_InCsharrp\obj\Debug\SuDung_Linq_InCsharrp.csproj.AssemblyReference.cache
+C:\Csharp\tuHocCharp\SuDung_Linq_InCsharrp\SuDung_Linq_InCsharrp\obj\Debug\SuDung_Linq_InCsharrp.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\tuHocCharp\SuDung_Linq_InCsharrp\SuDung_Linq_InCsharrp\obj\Debug\SuDung_Linq_InCsharrp.csproj.CoreCompileInputs.cache
+C:\Csharp\tuHocCharp\SuDung_Linq_InCsharrp\SuDung_Linq_InCsharrp\obj\Debug\SuDung_Linq_InCsharrp.exe
+C:\Csharp\tuHocCharp\SuDung_Linq_InCsharrp\SuDung_Linq_InCsharrp\obj\Debug\SuDung_Linq_InCsharrp.pdb
