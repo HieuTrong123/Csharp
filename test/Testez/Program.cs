@@ -119,7 +119,8 @@ namespace Testez
             Console.WriteLine($"gia tri phan so la {tuSo}/{mauSo}");
         }
         public static PhanSo operator - (PhanSo a,PhanSo b) => new PhanSo(b.tuSo+a.tuSo,a.mauSo +b.mauSo);
-        
+        public static implicit operator PhanSo(int a)=> new PhanSo(a, 1);
+        public static explicit operator double(PhanSo a)=> a.tuSo/a.mauSo;
     }
   
     class Program
@@ -139,6 +140,7 @@ namespace Testez
             //ref int a = ref b;
             //a = 6;
             //Console.WriteLine(b);
+            Console.ReadLine();
             Console.BackgroundColor=ConsoleColor.DarkMagenta;
             Console.ForegroundColor=ConsoleColor.Yellow;
             
@@ -147,7 +149,8 @@ namespace Testez
             
             b[0] = 1;
             b[1] = 2;
-
+            a = 3;
+            Console.WriteLine((double)b);
             Console.WriteLine(a-b);
           //==================================================================
             //PhanSo a = new PhanSo(3, 4);

@@ -6,3 +6,11 @@ C:\Csharp\Csharp\Testez\Testez\obj\Debug\Testez.csproj.SuggestedBindingRedirects
 C:\Csharp\Csharp\Testez\Testez\obj\Debug\Testez.csproj.CoreCompileInputs.cache
 C:\Csharp\Csharp\Testez\Testez\obj\Debug\Testez.exe
 C:\Csharp\Csharp\Testez\Testez\obj\Debug\Testez.pdb
+C:\Csharp\tuHocCharp\test\Testez\bin\Debug\Testez.exe.config
+C:\Csharp\tuHocCharp\test\Testez\bin\Debug\Testez.exe
+C:\Csharp\tuHocCharp\test\Testez\bin\Debug\Testez.pdb
+C:\Csharp\tuHocCharp\test\Testez\obj\Debug\Testez.csproj.AssemblyReference.cache
+C:\Csharp\tuHocCharp\test\Testez\obj\Debug\Testez.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\tuHocCharp\test\Testez\obj\Debug\Testez.csproj.CoreCompileInputs.cache
+C:\Csharp\tuHocCharp\test\Testez\obj\Debug\Testez.exe
+C:\Csharp\tuHocCharp\test\Testez\obj\Debug\Testez.pdb

@@ -1,0 +1,8 @@
+C:\Csharp\tuHocCharp\LopKeThua\LopKeThua\bin\Debug\LopKeThua.exe.config
+C:\Csharp\tuHocCharp\LopKeThua\LopKeThua\bin\Debug\LopKeThua.exe
+C:\Csharp\tuHocCharp\LopKeThua\LopKeThua\bin\Debug\LopKeThua.pdb
+C:\Csharp\tuHocCharp\LopKeThua\LopKeThua\obj\Debug\LopKeThua.csproj.AssemblyReference.cache
+C:\Csharp\tuHocCharp\LopKeThua\LopKeThua\obj\Debug\LopKeThua.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\tuHocCharp\LopKeThua\LopKeThua\obj\Debug\LopKeThua.csproj.CoreCompileInputs.cache
+C:\Csharp\tuHocCharp\LopKeThua\LopKeThua\obj\Debug\LopKeThua.exe
+C:\Csharp\tuHocCharp\LopKeThua\LopKeThua\obj\Debug\LopKeThua.pdb
