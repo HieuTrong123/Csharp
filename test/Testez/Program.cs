@@ -136,22 +136,25 @@ namespace Testez
        
         static void Main(string[] args)
         {
+            int[] a = new int[100];
+            int i, j;
+
             //int b=5;
             //ref int a = ref b;
             //a = 6;
             //Console.WriteLine(b);
-            Console.ReadLine();
-            Console.BackgroundColor=ConsoleColor.DarkMagenta;
-            Console.ForegroundColor=ConsoleColor.Yellow;
+            //Console.ReadLine();
+            //Console.BackgroundColor=ConsoleColor.DarkMagenta;
+            //Console.ForegroundColor=ConsoleColor.Yellow;
             
-            PhanSo a = new PhanSo(3, 4);
-            PhanSo b=new PhanSo(5, 4);
+            //PhanSo a = new PhanSo(3, 4);
+            //PhanSo b=new PhanSo(5, 4);
             
-            b[0] = 1;
-            b[1] = 2;
-            a = 3;
-            Console.WriteLine((double)b);
-            Console.WriteLine(a-b);
+            //b[0] = 1;
+            //b[1] = 2;
+            //a = 3;
+            //Console.WriteLine((double)b);
+            //Console.WriteLine(a-b);
           //==================================================================
             //PhanSo a = new PhanSo(3, 4);
             //a[0] = 1;
@@ -178,6 +181,43 @@ namespace Testez
 
 
             ReadKey();
+        }
+        static void HoanVi(ref int a, ref int b)
+        {
+            int c = a;
+            a = b;
+            b = c;
+        } 
+
+        static void Nhap(int n, int[] a)
+        {
+            int i;
+            for(i = 0; i < n; i++)
+            {
+                Console.Write("\na[{0} = : ", i);
+                a[i] = int.Parse(Console.ReadLine());   
+            }
+        } 
+
+        static void Xuat(int n, int[] a)
+        {
+            int i;
+            for(i = 0; i < n; i++)
+            {
+                Console.Write("\n{0}\t", a[i]);
+            }
+        }
+
+        static void SapXepTang(int n, int[] a)
+        {
+            int i, j;
+            for(i = 0; i < n-1; i++)
+            {
+                for(j = i+1; j < n; j++)
+                {
+                    if(a[i] > a[j])
+                }   
+            }
         }
     }
 }

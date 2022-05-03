@@ -1,0 +1,8 @@
+C:\Csharp\tuHocCharp\static\static\bin\Debug\@static.exe.config
+C:\Csharp\tuHocCharp\static\static\bin\Debug\@static.exe
+C:\Csharp\tuHocCharp\static\static\bin\Debug\@static.pdb
+C:\Csharp\tuHocCharp\static\static\obj\Debug\static.csproj.AssemblyReference.cache
+C:\Csharp\tuHocCharp\static\static\obj\Debug\static.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\tuHocCharp\static\static\obj\Debug\static.csproj.CoreCompileInputs.cache
+C:\Csharp\tuHocCharp\static\static\obj\Debug\@static.exe
+C:\Csharp\tuHocCharp\static\static\obj\Debug\@static.pdb

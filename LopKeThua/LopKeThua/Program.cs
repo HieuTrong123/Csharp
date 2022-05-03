@@ -3,17 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace LopKeThua
 {
     public abstract class HinhHoc
     {
 
         protected int canh;
-        public HinhHoc(int canh)
-        {
-            this.canh = canh;
-        }
+      
         public virtual double DienTich()
         {
             return 0;
@@ -22,13 +18,14 @@ namespace LopKeThua
     }
     public class HinhVuong : HinhHoc
     {
-
-        public HinhVuong(int canh) : base(canh)
+        public int temp;
+        public HinhVuong(int canh) 
         {
-
+            this.canh = canh;
         }
         public override double DienTich()
         {
+            
             return this.canh * this.canh;
         }
     }
@@ -47,7 +44,7 @@ namespace LopKeThua
     }
     public class HinhTron : HinhHoc
     {
-        public HinhTron(int bk) : base(bk)
+        public HinhTron(int bk)
         {
 
         }
@@ -66,7 +63,6 @@ namespace LopKeThua
             //hh = new HinhCN(5, 6);
            
             hh = hv;
-            
             if (hh is HinhCN)
                 Console.WriteLine($"s1={hh.DienTich()}");
             else  if (hh is HinhVuong)
