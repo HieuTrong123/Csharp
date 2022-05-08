@@ -8,7 +8,7 @@ namespace LopKeThua
     public abstract class HinhHoc
     {
 
-        protected int canh;
+        public int canh;
       
         public virtual double DienTich()
         {
@@ -59,14 +59,11 @@ namespace LopKeThua
         {
 
             HinhHoc hh = new HinhVuong(3);
+            Console.WriteLine(hh.canh);
             HinhVuong hv = new HinhVuong(4);
-            //hh = new HinhCN(5, 6);
-           
-            hh = hv;
-            if (hh is HinhCN)
-                Console.WriteLine($"s1={hh.DienTich()}");
-            else  if (hh is HinhVuong)
-                    Console.WriteLine($"s2={hh.DienTich()}");
+            Console.WriteLine(hh.canh);
+            hh = new HinhCN(5, 6);
+            Console.WriteLine(hh.canh);
 
             Console.ReadKey();
         }

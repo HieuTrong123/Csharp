@@ -1,0 +1,12 @@
+C:\Csharp\tuHocCharp\event\MangMotChieu\bin\Debug\net6.0\MangMotChieu.deps.json
+C:\Csharp\tuHocCharp\event\MangMotChieu\bin\Debug\net6.0\MangMotChieu.dll
+C:\Csharp\tuHocCharp\event\MangMotChieu\bin\Debug\net6.0\ref\MangMotChieu.dll
+C:\Csharp\tuHocCharp\event\MangMotChieu\bin\Debug\net6.0\MangMotChieu.pdb
+C:\Csharp\tuHocCharp\event\MangMotChieu\obj\Debug\net6.0\MangMotChieu.csproj.AssemblyReference.cache
+C:\Csharp\tuHocCharp\event\MangMotChieu\obj\Debug\net6.0\MangMotChieu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Csharp\tuHocCharp\event\MangMotChieu\obj\Debug\net6.0\MangMotChieu.AssemblyInfoInputs.cache
+C:\Csharp\tuHocCharp\event\MangMotChieu\obj\Debug\net6.0\MangMotChieu.AssemblyInfo.cs
+C:\Csharp\tuHocCharp\event\MangMotChieu\obj\Debug\net6.0\MangMotChieu.csproj.CoreCompileInputs.cache
+C:\Csharp\tuHocCharp\event\MangMotChieu\obj\Debug\net6.0\MangMotChieu.dll
+C:\Csharp\tuHocCharp\event\MangMotChieu\obj\Debug\net6.0\ref\MangMotChieu.dll
+C:\Csharp\tuHocCharp\event\MangMotChieu\obj\Debug\net6.0\MangMotChieu.pdb

@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a0d2dd47-a241-4ff5-8892-d38ff9caeadc": {
+      "ProjectGuid": "a0d2dd47-a241-4ff5-8892-d38ff9caeadc",
+      "DisplayName": "event",
+      "ColorIndex": 0
+    },
+    "4e8f1ca5-797b-475d-8bfd-897dd56b1367": {
+      "ProjectGuid": "4e8f1ca5-797b-475d-8bfd-897dd56b1367",
+      "DisplayName": "MangMotChieu",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

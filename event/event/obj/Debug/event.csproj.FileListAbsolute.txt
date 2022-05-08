@@ -1,0 +1,8 @@
+C:\Csharp\tuHocCharp\event\event\bin\Debug\@event.exe.config
+C:\Csharp\tuHocCharp\event\event\bin\Debug\@event.exe
+C:\Csharp\tuHocCharp\event\event\bin\Debug\@event.pdb
+C:\Csharp\tuHocCharp\event\event\obj\Debug\event.csproj.AssemblyReference.cache
+C:\Csharp\tuHocCharp\event\event\obj\Debug\event.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\tuHocCharp\event\event\obj\Debug\event.csproj.CoreCompileInputs.cache
+C:\Csharp\tuHocCharp\event\event\obj\Debug\@event.exe
+C:\Csharp\tuHocCharp\event\event\obj\Debug\@event.pdb
