@@ -1,0 +1,8 @@
+C:\Csharp\2115207_lab1\BaiTap1\bin\Debug\BaiTap1.exe.config
+C:\Csharp\2115207_lab1\BaiTap1\bin\Debug\BaiTap1.exe
+C:\Csharp\2115207_lab1\BaiTap1\bin\Debug\BaiTap1.pdb
+C:\Csharp\2115207_lab1\BaiTap1\obj\Debug\BaiTap1.csproj.AssemblyReference.cache
+C:\Csharp\2115207_lab1\BaiTap1\obj\Debug\BaiTap1.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\2115207_lab1\BaiTap1\obj\Debug\BaiTap1.csproj.CoreCompileInputs.cache
+C:\Csharp\2115207_lab1\BaiTap1\obj\Debug\BaiTap1.exe
+C:\Csharp\2115207_lab1\BaiTap1\obj\Debug\BaiTap1.pdb

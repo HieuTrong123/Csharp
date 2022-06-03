@@ -1,0 +1,9 @@
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB04\2115207_DInhTrongHieu_LAB04\obj\Debug\2115207_DInhTrongHieu_LAB04.csproj.AssemblyReference.cache
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB04\2115207_DInhTrongHieu_LAB04\obj\Debug\2115207_DInhTrongHieu_LAB04.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB04\2115207_DInhTrongHieu_LAB04\obj\Debug\2115207_DInhTrongHieu_LAB04.csproj.CoreCompileInputs.cache
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB04\2115207_DInhTrongHieu_LAB04\bin\Debug\2115207_DInhTrongHieu_LAB04.exe.config
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB04\2115207_DInhTrongHieu_LAB04\bin\Debug\2115207_DInhTrongHieu_LAB04.exe
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB04\2115207_DInhTrongHieu_LAB04\bin\Debug\2115207_DInhTrongHieu_LAB04.pdb
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB04\2115207_DInhTrongHieu_LAB04\obj\Debug\2115207_DInhTrongHieu_LAB04.exe
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB04\2115207_DInhTrongHieu_LAB04\obj\Debug\2115207_DInhTrongHieu_LAB04.pdb
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB04\2115207_DInhTrongHieu_LAB04\bin\Debug\dsphanso.txt

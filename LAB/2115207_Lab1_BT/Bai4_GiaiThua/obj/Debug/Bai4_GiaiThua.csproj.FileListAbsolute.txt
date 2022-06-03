@@ -1,0 +1,7 @@
+C:\Csharp\2115207_Lab1_BT\Bai4_GiaiThua\bin\Debug\Bai4_GiaiThua.exe.config
+C:\Csharp\2115207_Lab1_BT\Bai4_GiaiThua\bin\Debug\Bai4_GiaiThua.exe
+C:\Csharp\2115207_Lab1_BT\Bai4_GiaiThua\bin\Debug\Bai4_GiaiThua.pdb
+C:\Csharp\2115207_Lab1_BT\Bai4_GiaiThua\obj\Debug\Bai4_GiaiThua.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\2115207_Lab1_BT\Bai4_GiaiThua\obj\Debug\Bai4_GiaiThua.csproj.CoreCompileInputs.cache
+C:\Csharp\2115207_Lab1_BT\Bai4_GiaiThua\obj\Debug\Bai4_GiaiThua.exe
+C:\Csharp\2115207_Lab1_BT\Bai4_GiaiThua\obj\Debug\Bai4_GiaiThua.pdb

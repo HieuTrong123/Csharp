@@ -1,0 +1,9 @@
+C:\Csharp\LAB\2115207_DinhTrongHieu_Lab7\2115207_DinhTrongHieu_Lab7\bin\Debug\2115207_DinhTrongHieu_Lab7.exe.config
+C:\Csharp\LAB\2115207_DinhTrongHieu_Lab7\2115207_DinhTrongHieu_Lab7\bin\Debug\2115207_DinhTrongHieu_Lab7.exe
+C:\Csharp\LAB\2115207_DinhTrongHieu_Lab7\2115207_DinhTrongHieu_Lab7\bin\Debug\2115207_DinhTrongHieu_Lab7.pdb
+C:\Csharp\LAB\2115207_DinhTrongHieu_Lab7\2115207_DinhTrongHieu_Lab7\obj\Debug\2115207_DinhTrongHieu_Lab7.csproj.AssemblyReference.cache
+C:\Csharp\LAB\2115207_DinhTrongHieu_Lab7\2115207_DinhTrongHieu_Lab7\obj\Debug\2115207_DinhTrongHieu_Lab7.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\LAB\2115207_DinhTrongHieu_Lab7\2115207_DinhTrongHieu_Lab7\obj\Debug\2115207_DinhTrongHieu_Lab7.csproj.CoreCompileInputs.cache
+C:\Csharp\LAB\2115207_DinhTrongHieu_Lab7\2115207_DinhTrongHieu_Lab7\obj\Debug\2115207_DinhTrongHieu_Lab7.exe
+C:\Csharp\LAB\2115207_DinhTrongHieu_Lab7\2115207_DinhTrongHieu_Lab7\obj\Debug\2115207_DinhTrongHieu_Lab7.pdb
+C:\Csharp\LAB\2115207_DinhTrongHieu_Lab7\2115207_DinhTrongHieu_Lab7\bin\Debug\dsanpham.txt

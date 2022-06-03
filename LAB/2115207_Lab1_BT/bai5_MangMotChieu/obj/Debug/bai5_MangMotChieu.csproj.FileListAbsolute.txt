@@ -1,0 +1,8 @@
+C:\Csharp\2115207_Lab1_BT\bai5_MangMotChieu\bin\Debug\bai5_MangMotChieu.exe.config
+C:\Csharp\2115207_Lab1_BT\bai5_MangMotChieu\bin\Debug\bai5_MangMotChieu.exe
+C:\Csharp\2115207_Lab1_BT\bai5_MangMotChieu\bin\Debug\bai5_MangMotChieu.pdb
+C:\Csharp\2115207_Lab1_BT\bai5_MangMotChieu\obj\Debug\bai5_MangMotChieu.csproj.AssemblyReference.cache
+C:\Csharp\2115207_Lab1_BT\bai5_MangMotChieu\obj\Debug\bai5_MangMotChieu.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\2115207_Lab1_BT\bai5_MangMotChieu\obj\Debug\bai5_MangMotChieu.csproj.CoreCompileInputs.cache
+C:\Csharp\2115207_Lab1_BT\bai5_MangMotChieu\obj\Debug\bai5_MangMotChieu.exe
+C:\Csharp\2115207_Lab1_BT\bai5_MangMotChieu\obj\Debug\bai5_MangMotChieu.pdb

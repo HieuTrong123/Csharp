@@ -1,0 +1,9 @@
+﻿Sach,Lap trinh HDT,Giao duc,100, 60
+Tap chi,May bay,TPHCM,100,Quan 10 - TP HCM
+Tap chi,Nguoi mau tap 1,TPHCM,50,Quan 1 - TP HCM
+Bao,Nong dan,Thanh nien,50
+Tap chi,Ca si,Ha Noi, 40,Quan Thanh Xuan - Ha Noi
+Bao,Nhan dan tap 1,Thanh nien,20
+Bao,Lao dong,Thanh nien,10
+Sach,Cau truc DL&TG1,Giao duc,150,100
+Sach,Bao tri may tinh,Da Nang,130,200

@@ -1,0 +1,7 @@
+C:\Csharp\2115207_Lab1_BT\Bai3_PhanLoaiTamGiac\bin\Debug\Bai3_PhanLoaiTamGiac.exe.config
+C:\Csharp\2115207_Lab1_BT\Bai3_PhanLoaiTamGiac\bin\Debug\Bai3_PhanLoaiTamGiac.exe
+C:\Csharp\2115207_Lab1_BT\Bai3_PhanLoaiTamGiac\bin\Debug\Bai3_PhanLoaiTamGiac.pdb
+C:\Csharp\2115207_Lab1_BT\Bai3_PhanLoaiTamGiac\obj\Debug\Bai3_PhanLoaiTamGiac.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\2115207_Lab1_BT\Bai3_PhanLoaiTamGiac\obj\Debug\Bai3_PhanLoaiTamGiac.csproj.CoreCompileInputs.cache
+C:\Csharp\2115207_Lab1_BT\Bai3_PhanLoaiTamGiac\obj\Debug\Bai3_PhanLoaiTamGiac.exe
+C:\Csharp\2115207_Lab1_BT\Bai3_PhanLoaiTamGiac\obj\Debug\Bai3_PhanLoaiTamGiac.pdb

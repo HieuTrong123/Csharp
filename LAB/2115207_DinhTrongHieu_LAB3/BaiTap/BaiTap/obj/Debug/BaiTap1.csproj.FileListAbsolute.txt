@@ -1,0 +1,16 @@
+C:\Csharp\LAB\2115207_DinhQTrongHieu_LAB3\BaiTap\BaiTap\bin\Debug\BaiTap.exe.config
+C:\Csharp\LAB\2115207_DinhQTrongHieu_LAB3\BaiTap\BaiTap\bin\Debug\BaiTap.exe
+C:\Csharp\LAB\2115207_DinhQTrongHieu_LAB3\BaiTap\BaiTap\bin\Debug\BaiTap.pdb
+C:\Csharp\LAB\2115207_DinhQTrongHieu_LAB3\BaiTap\BaiTap\obj\Debug\BaiTap1.csproj.AssemblyReference.cache
+C:\Csharp\LAB\2115207_DinhQTrongHieu_LAB3\BaiTap\BaiTap\obj\Debug\BaiTap1.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\LAB\2115207_DinhQTrongHieu_LAB3\BaiTap\BaiTap\obj\Debug\BaiTap1.csproj.CoreCompileInputs.cache
+C:\Csharp\LAB\2115207_DinhQTrongHieu_LAB3\BaiTap\BaiTap\obj\Debug\BaiTap.exe
+C:\Csharp\LAB\2115207_DinhQTrongHieu_LAB3\BaiTap\BaiTap\obj\Debug\BaiTap.pdb
+C:\Csharp\LAB\2115207_DinhTrongHieu_LAB3\BaiTap\BaiTap\bin\Debug\BaiTap.exe.config
+C:\Csharp\LAB\2115207_DinhTrongHieu_LAB3\BaiTap\BaiTap\bin\Debug\BaiTap.exe
+C:\Csharp\LAB\2115207_DinhTrongHieu_LAB3\BaiTap\BaiTap\bin\Debug\BaiTap.pdb
+C:\Csharp\LAB\2115207_DinhTrongHieu_LAB3\BaiTap\BaiTap\obj\Debug\BaiTap1.csproj.AssemblyReference.cache
+C:\Csharp\LAB\2115207_DinhTrongHieu_LAB3\BaiTap\BaiTap\obj\Debug\BaiTap1.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\LAB\2115207_DinhTrongHieu_LAB3\BaiTap\BaiTap\obj\Debug\BaiTap1.csproj.CoreCompileInputs.cache
+C:\Csharp\LAB\2115207_DinhTrongHieu_LAB3\BaiTap\BaiTap\obj\Debug\BaiTap.exe
+C:\Csharp\LAB\2115207_DinhTrongHieu_LAB3\BaiTap\BaiTap\obj\Debug\BaiTap.pdb

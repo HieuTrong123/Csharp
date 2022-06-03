@@ -1,0 +1,8 @@
+C:\Csharp\2115207_lab1\Lab1_HD_bai2\bin\Debug\Lab1_HD_bai2.exe.config
+C:\Csharp\2115207_lab1\Lab1_HD_bai2\bin\Debug\Lab1_HD_bai2.exe
+C:\Csharp\2115207_lab1\Lab1_HD_bai2\bin\Debug\Lab1_HD_bai2.pdb
+C:\Csharp\2115207_lab1\Lab1_HD_bai2\obj\Debug\Lab1_HD_bai2.csproj.AssemblyReference.cache
+C:\Csharp\2115207_lab1\Lab1_HD_bai2\obj\Debug\Lab1_HD_bai2.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\2115207_lab1\Lab1_HD_bai2\obj\Debug\Lab1_HD_bai2.csproj.CoreCompileInputs.cache
+C:\Csharp\2115207_lab1\Lab1_HD_bai2\obj\Debug\Lab1_HD_bai2.exe
+C:\Csharp\2115207_lab1\Lab1_HD_bai2\obj\Debug\Lab1_HD_bai2.pdb

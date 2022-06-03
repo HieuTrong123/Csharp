@@ -1,0 +1,8 @@
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB2\2115207_DInhTrongHieu_LAB2\bin\Debug\2115207_DInhTrongHieu_LAB2.exe.config
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB2\2115207_DInhTrongHieu_LAB2\bin\Debug\2115207_DInhTrongHieu_LAB2.exe
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB2\2115207_DInhTrongHieu_LAB2\bin\Debug\2115207_DInhTrongHieu_LAB2.pdb
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB2\2115207_DInhTrongHieu_LAB2\obj\Debug\2115207_DInhTrongHieu_LAB2.csproj.AssemblyReference.cache
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB2\2115207_DInhTrongHieu_LAB2\obj\Debug\2115207_DInhTrongHieu_LAB2.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB2\2115207_DInhTrongHieu_LAB2\obj\Debug\2115207_DInhTrongHieu_LAB2.csproj.CoreCompileInputs.cache
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB2\2115207_DInhTrongHieu_LAB2\obj\Debug\2115207_DInhTrongHieu_LAB2.exe
+C:\Csharp\LAB\2115207_DInhTrongHieu_LAB2\2115207_DInhTrongHieu_LAB2\obj\Debug\2115207_DInhTrongHieu_LAB2.pdb

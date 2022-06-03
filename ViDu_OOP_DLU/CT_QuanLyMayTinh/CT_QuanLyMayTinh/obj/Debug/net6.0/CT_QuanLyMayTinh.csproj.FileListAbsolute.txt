@@ -1,0 +1,15 @@
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\bin\Debug\net6.0\CT_QuanLyMayTinh.exe
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\bin\Debug\net6.0\CT_QuanLyMayTinh.deps.json
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\bin\Debug\net6.0\CT_QuanLyMayTinh.runtimeconfig.json
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\bin\Debug\net6.0\CT_QuanLyMayTinh.dll
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\bin\Debug\net6.0\CT_QuanLyMayTinh.pdb
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\obj\Debug\net6.0\CT_QuanLyMayTinh.csproj.AssemblyReference.cache
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\obj\Debug\net6.0\CT_QuanLyMayTinh.GeneratedMSBuildEditorConfig.editorconfig
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\obj\Debug\net6.0\CT_QuanLyMayTinh.AssemblyInfoInputs.cache
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\obj\Debug\net6.0\CT_QuanLyMayTinh.AssemblyInfo.cs
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\obj\Debug\net6.0\CT_QuanLyMayTinh.csproj.CoreCompileInputs.cache
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\obj\Debug\net6.0\CT_QuanLyMayTinh.dll
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\obj\Debug\net6.0\refint\CT_QuanLyMayTinh.dll
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\obj\Debug\net6.0\CT_QuanLyMayTinh.pdb
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\obj\Debug\net6.0\CT_QuanLyMayTinh.genruntimeconfig.cache
+D:\Subjects\LTHDT\CTK45B\Example\CT_QuanLyMayTinh\CT_QuanLyMayTinh\obj\Debug\net6.0\ref\CT_QuanLyMayTinh.dll

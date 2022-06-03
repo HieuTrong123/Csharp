@@ -1,0 +1,8 @@
+C:\Csharp\2115207_Lab1_BT\Bai2_PhuongTrinhBacHai\bin\Debug\Bai2_PhuongTrinhBacHai.exe.config
+C:\Csharp\2115207_Lab1_BT\Bai2_PhuongTrinhBacHai\bin\Debug\Bai2_PhuongTrinhBacHai.exe
+C:\Csharp\2115207_Lab1_BT\Bai2_PhuongTrinhBacHai\bin\Debug\Bai2_PhuongTrinhBacHai.pdb
+C:\Csharp\2115207_Lab1_BT\Bai2_PhuongTrinhBacHai\obj\Debug\Bai2_PhuongTrinhBacHai.csproj.AssemblyReference.cache
+C:\Csharp\2115207_Lab1_BT\Bai2_PhuongTrinhBacHai\obj\Debug\Bai2_PhuongTrinhBacHai.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\2115207_Lab1_BT\Bai2_PhuongTrinhBacHai\obj\Debug\Bai2_PhuongTrinhBacHai.csproj.CoreCompileInputs.cache
+C:\Csharp\2115207_Lab1_BT\Bai2_PhuongTrinhBacHai\obj\Debug\Bai2_PhuongTrinhBacHai.exe
+C:\Csharp\2115207_Lab1_BT\Bai2_PhuongTrinhBacHai\obj\Debug\Bai2_PhuongTrinhBacHai.pdb

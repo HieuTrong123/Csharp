@@ -1,0 +1,18 @@
+﻿Console.WriteLine("1. Thoát chương trình.");
+Console.WriteLine("2. Tạo phương thức tạo lập QuanLySinhVien không có tham số.");
+Console.WriteLine("3. Thêm sinh viên vào danh sách (mã sinh viên là duy nhất).");
+Console.WriteLine("4. Nhập danh sách sinh viên từ bàn phím.");
+Console.WriteLine("5. Nhập danh sách cố định gồm 10 sinh viên.");
+Console.WriteLine("6. Xuất danh sách sinh viên: sử dụng Padleft, Padright để căn lề.");
+Console.WriteLine("7. Tính điểm trung bình cộng.");
+Console.WriteLine("8. Tìm danh sách sinh viên theo tên.");
+Console.WriteLine("9. Tìm danh sách sinh viên có điểm trung bình max.");
+Console.WriteLine("10.Tìm danh sách sinh viên có tên x.");
+Console.WriteLine("11.Thống kê số lượng sinh viên có không đạt (điểm trung bình < 5.5).");
+Console.WriteLine("12.Sắp xếp danh sách sinh viên tăng theo tên.");
+Console.WriteLine("13.Sắp xếp danh sách sinh viên giảm dần theo chiều dài của họ tên");
+Console.WriteLine("14.Sắp xếp danh sách giảm theo điểm trung bình, nếu điểm trung bình trùng nhau thì sắpgiảm theo họ sinh viên.");
+Console.WriteLine("15.Chèn sinh viên sv sau khi viên có mã số x.");
+Console.WriteLine("16.Xóa sinh viên theo mã số.");
+Console.WriteLine("17.Xóa sinh viên đầu tiên trong danh sách có tên x.");
+Console.WriteLine("18.Xóa tất cả sinh viên có tên x.");
