@@ -1,0 +1,9 @@
+C:\Csharp\Ktra OOP\2115207_DinhTrongHieu_KiemTra2\2115207_DinhTrongHieu_KiemTra2\bin\Debug\dsanpham.txt
+C:\Csharp\Ktra OOP\2115207_DinhTrongHieu_KiemTra2\2115207_DinhTrongHieu_KiemTra2\bin\Debug\2115207_DinhTrongHieu_KiemTra2.exe.config
+C:\Csharp\Ktra OOP\2115207_DinhTrongHieu_KiemTra2\2115207_DinhTrongHieu_KiemTra2\bin\Debug\2115207_DinhTrongHieu_KiemTra2.exe
+C:\Csharp\Ktra OOP\2115207_DinhTrongHieu_KiemTra2\2115207_DinhTrongHieu_KiemTra2\bin\Debug\2115207_DinhTrongHieu_KiemTra2.pdb
+C:\Csharp\Ktra OOP\2115207_DinhTrongHieu_KiemTra2\2115207_DinhTrongHieu_KiemTra2\obj\Debug\2115207_DinhTrongHieu_KiemTra2.csproj.AssemblyReference.cache
+C:\Csharp\Ktra OOP\2115207_DinhTrongHieu_KiemTra2\2115207_DinhTrongHieu_KiemTra2\obj\Debug\2115207_DinhTrongHieu_KiemTra2.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\Ktra OOP\2115207_DinhTrongHieu_KiemTra2\2115207_DinhTrongHieu_KiemTra2\obj\Debug\2115207_DinhTrongHieu_KiemTra2.csproj.CoreCompileInputs.cache
+C:\Csharp\Ktra OOP\2115207_DinhTrongHieu_KiemTra2\2115207_DinhTrongHieu_KiemTra2\obj\Debug\2115207_DinhTrongHieu_KiemTra2.exe
+C:\Csharp\Ktra OOP\2115207_DinhTrongHieu_KiemTra2\2115207_DinhTrongHieu_KiemTra2\obj\Debug\2115207_DinhTrongHieu_KiemTra2.pdb
