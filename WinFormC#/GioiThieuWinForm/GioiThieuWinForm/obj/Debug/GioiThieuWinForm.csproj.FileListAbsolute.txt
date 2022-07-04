@@ -1,0 +1,11 @@
+C:\Csharp\WinFormC#\GioiThieuWinForm\GioiThieuWinForm\obj\Debug\GioiThieuWinForm.csproj.AssemblyReference.cache
+C:\Csharp\WinFormC#\GioiThieuWinForm\GioiThieuWinForm\obj\Debug\GioiThieuWinForm.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\WinFormC#\GioiThieuWinForm\GioiThieuWinForm\obj\Debug\GioiThieuWinForm.Form1.resources
+C:\Csharp\WinFormC#\GioiThieuWinForm\GioiThieuWinForm\obj\Debug\GioiThieuWinForm.csproj.GenerateResource.cache
+C:\Csharp\WinFormC#\GioiThieuWinForm\GioiThieuWinForm\obj\Debug\GioiThieuWinForm.Properties.Resources.resources
+C:\Csharp\WinFormC#\GioiThieuWinForm\GioiThieuWinForm\obj\Debug\GioiThieuWinForm.csproj.CoreCompileInputs.cache
+C:\Csharp\WinFormC#\GioiThieuWinForm\GioiThieuWinForm\bin\Debug\GioiThieuWinForm.exe.config
+C:\Csharp\WinFormC#\GioiThieuWinForm\GioiThieuWinForm\bin\Debug\GioiThieuWinForm.exe
+C:\Csharp\WinFormC#\GioiThieuWinForm\GioiThieuWinForm\bin\Debug\GioiThieuWinForm.pdb
+C:\Csharp\WinFormC#\GioiThieuWinForm\GioiThieuWinForm\obj\Debug\GioiThieuWinForm.exe
+C:\Csharp\WinFormC#\GioiThieuWinForm\GioiThieuWinForm\obj\Debug\GioiThieuWinForm.pdb
